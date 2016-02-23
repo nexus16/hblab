@@ -1,8 +1,11 @@
 <?php
-echo "hello";
 require( 'DB_driver.php' );
-echo "hello";
+
 $DB = new DB_driver();
-$DB ->connect();
+// UPDATE
+$DB->update('customer', array(
+    'name' => 'hoang'
+), 'id = 2');
+echo "<br>insert thanh cong<br>"
 ?>
 
